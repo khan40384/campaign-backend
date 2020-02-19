@@ -6,6 +6,7 @@ api_secret: 'BzcvsT2y9GW5qkvlrlZixJKyOgY'
 });
 
 exports.uploads = (file) =>{
+	console.log(file);
 return new Promise(resolve => {
 cloudinary.uploader.upload(file, (result) =>{
 resolve({url: result.url, id: result.public_id})

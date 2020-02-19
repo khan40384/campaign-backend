@@ -17,7 +17,7 @@ try{
        imageName: req.file.originalname,
      }
 //USING MONGO METHOD TO FINE IF IMAGE-NAME EXIST IN THE DB
-     imageModel.find({campaignName: imageDetails.imageName, userId: id}, (err,          callback) => {
+     imageModel.find({campaignName: imageDetails.imageName, userId:id}, (err,          callback) => {
 //CHECKING IF ERROR OCCURRED      
  if (err) {
            res.json({

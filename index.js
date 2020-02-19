@@ -18,7 +18,7 @@ require('./config/passportRegister')(passport);
 
 
 var corsOptions = {
-  origin: 'http://localhost:3000',
+  origin: 'https://burger-6d593.firebaseapp.com',
   credentials:  true
 }
 
